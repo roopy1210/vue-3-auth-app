@@ -16,7 +16,7 @@ const login = async (username, password) => {
         error.value = null
         isPending.value = false
     } catch(err) {
-        error.value = 'Incorrect login credentials'
+        error.value = '로그인 정보가 올바르지 않습니다.'
         isPending.value = false
     }
 }
