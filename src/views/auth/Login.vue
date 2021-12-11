@@ -25,7 +25,7 @@ export default {
         const password = ref('')
 
         const handleSubmit = async () => {
-            const res = await login(username.value, password.value)
+            await login(username.value, password.value)
 
             if (store.state.auth.status.loggedIn) {
                 router.push({ name: 'Profile' })
