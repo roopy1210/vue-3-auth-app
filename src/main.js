@@ -39,7 +39,7 @@ Axios.interceptors.response.use(
   },
   (error) => {
     console.log('★ Axios.interceptors.respoonse error executed.')    
-
+    console.log(error)
     switch (error.response.status) {
       case 401:
         localStorage.removeItem('user');
